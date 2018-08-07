@@ -1,0 +1,5 @@
+https://www.oxxostudio.tw/articles/201411/svg-d3-04-axis.html
+https://github.com/d3/d3-scale/blob/master/README.md#linear_ticks
+https://blog.csdn.net/gdp12315_gu/article/details/51721988
+https://blog.csdn.net/fengda2870/article/details/78399205
+https://bl.ocks.org/mbostock/3885304
