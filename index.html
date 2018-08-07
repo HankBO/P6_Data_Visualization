@@ -94,7 +94,7 @@
             .append("bar")
 
         //debugger;
-        //gen grouped data
+        //gen grouped data by credit and prosper grade
         function agg_var(leaves) {
           var grade_count = leaves.length
           var loan_amount = d3.mean(leaves, function(d) {
@@ -191,7 +191,7 @@
             .attr('height', function(d) { return height - y_scale(d.values['grade_count']); });
 
 
-        //text under bar groups
+        //number for each bar, hidden at first
 		    var texts = bar_group.append('text')
 			      .text(function(d) {
                 return d.values['grade_count'];
@@ -256,10 +256,12 @@
               .attr("visibility", "hidden");
         }
 
+        //update phrase for each graph
         function update_phrase(phrases) {
           phrase.text(phrases)
         }
 
+        //update unit for each variable
         function update_unit(unit) {
             y_axis_text.transition()
               .duration(500)
